@@ -4,8 +4,8 @@
 		gcc aes.c -o aes
 
 	RUN:
-		./aes [--dec] --keyfile $KEYFILE --inputfile $INPUTFILE
-			[--outputfile $OUTFILE]
+		./aes --keyfile $KEYFILE --inputfile $INPUTFILE
+			[--outputfile $OUTFILE] [--dec]
 
 	FLAGS:
 		--dec
